@@ -1,0 +1,35 @@
+
+
+.head {
+    background: #181015 url(../../../../assets/img/bg_header_sp.jpg) no-repeat;
+    background-size: cover;
+    min-height: 520px;
+    text-align: center;
+    padding-top: 240px;
+    color: white;
+    font-family: "Open sans", Helvetica, Arial;
+    font-weight: 300;
+}
+
+.leads{
+ font-family: "Open sans", Helvetica, Arial;
+    font-size: 44px;
+    margin-bottom: 6px;
+    color: white;
+    line-height: 1.15em;   
+}
+.tagline {
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 25px;
+}
+
+
+
+
+
+@media (max-width: 767px){
+  .head {
+    min-height: 320px;
+    padding-top: 160px;
+}  
+}
