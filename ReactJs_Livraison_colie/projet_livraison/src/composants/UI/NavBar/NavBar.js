@@ -11,6 +11,7 @@ export default function NavBar() {
       <Navbar
         expand="lg"
         className={navBarstyle}
+        style={{overflow: "hidden",position: "absolu", width:"100vw"}}
         bg="dark"
         data-bs-theme="dark"
       >

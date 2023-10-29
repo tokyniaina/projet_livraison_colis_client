@@ -3,7 +3,7 @@ import FormulaireAjoutColis from '../../../../Colis/FormulaireAjoutColis'
 
 const ColisAjout = () => {
   return (
-    <div>
+    <div >
       <FormulaireAjoutColis/>
     </div>
   )

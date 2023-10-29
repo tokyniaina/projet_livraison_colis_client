@@ -1,4 +1,4 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { dataUser } from "./axios";
 const initialState = dataUser
 

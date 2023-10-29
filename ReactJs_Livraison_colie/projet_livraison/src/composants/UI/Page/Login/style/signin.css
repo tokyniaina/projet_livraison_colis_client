@@ -1,7 +1,7 @@
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
 body {
   /* display: flex; */
@@ -13,9 +13,10 @@ body {
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
+  /* max-width: 330px; */
   padding: 15px;
   margin: auto;
+  justify-content: center;
 }
 
 .form-signin .checkbox {
@@ -36,4 +37,8 @@ body {
   margin-bottom: 0px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.form-floating{
+  margin-bottom: 10px;
 }

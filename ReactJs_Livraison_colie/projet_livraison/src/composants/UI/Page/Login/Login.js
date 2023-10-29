@@ -45,48 +45,13 @@ export default function Login() {
   };
   return (
     <>
-      {/* <div className="text-center contenu">
-        <h1>Login</h1>
-        <div>
-          <div>
-            <input
-              type="text"
-              name="name"
-              placeholder="Email/numero"
-              value={identif.name}
-              onChange={handleIdentif}
-            />
-          </div>
-          <div>
-            <input
-              type="password"
-              name="mdp"
-              placeholder="Mot de passe"
-              value={identif.mdp}
-              onChange={handleIdentif}
-            />
-          </div>
-          <button type="submit" onClick={hangleVerification}>
-            Login
-          </button>
-        </div>
-        <div>
-          <p>mot de passe oublier?</p>
-        </div>
-        <div>
-          <p>créer un nouvelle compte?</p>
-          <LinkContainer to="/SignUs">
-            <Nav.Link>créer</Nav.Link>
-          </LinkContainer>
-        </div>
-      </div> */}
+      
       <div className="text-center">
         <main className="form-signin">
           <form>
             <Image src="../../../../assets/icon/login.png" alt="" />
 
-            <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
-
+            <h1 className="h3 mb-3 fw-normal">Se connecter</h1>
             <div className="form-floating">
               <input
                 type="text"
@@ -98,7 +63,7 @@ export default function Login() {
                 onChange={handleIdentif}
               />
 
-              <label for="floatingInput">Identification</label>
+              <label htmlFor="floatingInput">Identification</label>
             </div>
             <div className="form-floating">
               <input
@@ -110,27 +75,24 @@ export default function Login() {
                 value={identif.mdp}
                 onChange={handleIdentif}
               />
-              <label for="floatingPassword">Password</label>
+              <label htmlFor="floatingPassword">Password</label>
             </div>
 
-            <div className="checkbox mb-3">
-              <label>
-                {/* <input type="checkbox" value="remember-me" /> Remember me */}
-              </label>
-            </div>
-            <button className="w-100 btn btn-lg btn-primary" type="submit">
-              Sign in
+            <button className="w-100 btn btn-lg btn-primary mt-4" type="submit"
+            onClick={() => console.log("okok")}>
+              Verifier
             </button>
             <p className="text-muted">mot de passe oublier ?</p>
             <p className="text-muted">
-              {" "}
               <LinkContainer to="/SignUs">
                 <Nav.Link>creer un compte</Nav.Link>
               </LinkContainer>
             </p>
           </form>
         </main>
+        
       </div>
+      
     </>
   );
 }
